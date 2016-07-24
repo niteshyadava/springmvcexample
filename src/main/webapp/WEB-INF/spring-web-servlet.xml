@@ -1,4 +1,4 @@
-<beans xmlns="http://www.springframework.org/schema/beans"
+ <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -21,6 +21,41 @@
 			<value>.jsp</value>
 		</property>
 	</bean>
+	
+	
+	<!-- Hibernate 4 SessionFactory Bean definition
+	<beans:bean id="hibernate4AnnotatedSessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<beans:property name="dataSource" ref="dataSource" />
+		<beans:property name="annotatedClasses">
+			<beans:list>
+				<beans:value>com.mkyong.web.controller.Person</beans:value>
+			</beans:list>
+		</beans:property>
+		<beans:property name="hibernateProperties">
+			<beans:props>
+				<beans:prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+				</beans:prop>
+				<beans:prop key="hibernate.show_sql">true</beans:prop>
+			</beans:props>
+		</beans:property>
+	</beans:bean>
+	
+	<beans:bean id="studentDAO" class="com.mkyong.web.controller.dao.PersonDAOImpl">
+		<beans:property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="studentService" class="com.mkyong.web.controller.service.PersonServiceImpl">
+		<beans:property name="studentDAO" ref="studentDAO"></beans:property>
+	</beans:bean>
+	<context:component-scan base-package="com.mkyong.web" />
+	
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
+	<beans:bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<beans:property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+
+	 -->
 
 	<mvc:resources mapping="/resources/**" location="/resources/" />
  

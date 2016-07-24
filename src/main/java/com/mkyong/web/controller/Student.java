@@ -1,19 +1,51 @@
 package com.mkyong.web.controller;
 
-import java.util.Date;
+/*import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+*/
+/*@Entity
+@Table(name="student")
+*/
 public class Student {
-   private String firstName,lastName,fatherName,pob,eid,university,course;
-  // private Date dob;
-   private Integer marks1,marks2,pno,marks3,marks4;
+   
+	/*@Id
+	@Column(name="id")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)*/
+	private int id;
+	private String firstName,lastName,fatherName,pob,eid,university,course,username,password;
+    private Integer marks1,marks2,pno,marks3,marks4;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
   
 
-/*public Date getDob() {
-	return dob;
-}
-public void setDob(Date dob) {
-	this.dob = dob;
-}*/
+
+public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 public String getFirstName() {
 	return firstName;
 }
@@ -88,17 +120,5 @@ public void setMarks4(Integer marks4) {
 	this.marks4 = marks4;
 }
 
-/*public Integer getPercent1(Integer marks1,Integer marks2) {
-	percent1=(marks1+marks2)/3;
-	return percent1;
-}
 
-
-public Integer getPercent2(Integer marks3,Integer marks4) {
-	percent2=(marks3+marks4)/3;
-	return percent2;
-}
-*/
-
-   
 }

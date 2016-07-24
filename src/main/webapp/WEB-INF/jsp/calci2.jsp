@@ -8,7 +8,7 @@
 <h2>Submitted Student Information</h2>
 
    <table>
-  <tr>
+    <tr>
         <td>First Name:</td>
         <td>${student.firstName}</td>
     </tr>
@@ -69,12 +69,12 @@
         <td>${student.course}</td>
     </tr>   
    </table> 
-<br/><br/> 
-<center>
-  <!--  <input type="submit" value="Print"> --> 
-  <input type="button" 
-  onClick="window.print()" 
-  value="Print This Page"/>
-</center>
+ <br/><br/> 
+ <center>
+   <!--  <input type="submit" value="Print"> --> 
+   <input type="button" 
+   onClick="window.print()" 
+   value="Print This Page"/>
+  </center>
 </body>
 </html>

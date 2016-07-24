@@ -1,9 +1,9 @@
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%-- <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%> --%>
 <html>
 <head>
 <title>Spring MVC Form Handling</title>
 </head>
-<body>
+<body style="background-image:url(../src/main/images/images.jpg)">
 <center>
 <h3 style="color:red;">ONLINE APPLICATION FORM</h3>
 </center>
@@ -47,25 +47,8 @@
    <input type="radio" name="course" value="B.Comm">B.Comm
    <input type="radio" name="course" value="Hotel Management">Hotel Management
    <br/><br/><br/>
-   <!--  Enter DOB:
-   <input type="date" name="dob" max="1996-12-31">
-   <br/><br/><br/> 
-  
-     -->
-   <!-- Enter marks in subject 3(max.100):<input type="number" name="marks3" min="1" max="100">
+   Password:<input type="password" name="pass">
    <br/><br/><br/>
-   Enter marks in subject 4(max.100):<input type="number" name="marks4" min="1" max="100">
-   <br/><br/> <br/>
-   Enter marks in subject 5(max.100):<input type="number" name="marks5" min="1" max="100">
-   <br/><br/><br/> 
-   
-   Enter marks in subject 3(max.100):<input type="number" name="marks8" min="1" max="100">
-   <br/><br/><br/>
-   Enter marks in subject 4(max.100):<input type="number" name="marks9" min="1" max="100">
-   <br/><br/><br/>
-   Enter marks in subject 5(max.100):<input type="number" name="marks10" min="1" max="100">
-   <br/><br/> <br/> -->
- 
    <center>
    <input type="submit" value="Submit">
    </center>
