@@ -16,6 +16,10 @@
         <td>Last Name:</td>
         <td>${student.lastName}</td>
     </tr>
+     <tr>
+        <td>Username:</td>
+        <td>${student.username}</td>
+    </tr>
     <tr>
         <td>Father's Name:</td>
         <td>${student.fatherName}</td>

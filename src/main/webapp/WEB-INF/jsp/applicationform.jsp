@@ -3,16 +3,20 @@
 <head>
 <title>Spring MVC Form Handling</title>
 </head>
-<body style="background-image:url(../src/main/images/images.jpg)">
+<body>
 <center>
 <h3 style="color:red;">ONLINE APPLICATION FORM</h3>
 </center>
-<form:form method="POST" action="addstudent">
+<form method="POST" action="addstudent">
    
    First Name:<input type="text" name="firstName">
    <br/><br/><br/>
    Last Name:<input type="text" name="lastName">
    <br/><br/><br/>
+   Username:<input type="text" name="userName">
+   Password:<input type="password" name="password">
+   <br/><br/><br/>
+
    Father's Name:<input type="text" name="fatherName">
    <br/><br/><br/>
    Place of Birth:<input type="text" name="pob">
@@ -47,11 +51,10 @@
    <input type="radio" name="course" value="B.Comm">B.Comm
    <input type="radio" name="course" value="Hotel Management">Hotel Management
    <br/><br/><br/>
-   Password:<input type="password" name="pass">
-   <br/><br/><br/>
+   
    <center>
    <input type="submit" value="Submit">
    </center>
-</form:form>
+</form>
 </body>
 </html>

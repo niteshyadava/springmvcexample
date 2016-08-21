@@ -1,21 +1,9 @@
 package com.mkyong.web.controller;
 
-/*import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
-*/
-/*@Entity
-@Table(name="student")
-*/
 public class Student {
    
-	/*@Id
-	@Column(name="id")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)*/
+	
 	private int id;
 	private String firstName,lastName,fatherName,pob,eid,university,course,username,password;
     private Integer marks1,marks2,pno,marks3,marks4;
